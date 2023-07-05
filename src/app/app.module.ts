@@ -8,11 +8,11 @@ import { PlanoEconomicoComponent } from './components/plano-economico/plano-econ
 @NgModule({
   declarations: [
     AppComponent,
-    MenuComponent,
-    PlanoEconomicoComponent
+    PlanoEconomicoComponent,
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    MenuComponent,
   ],
   providers: [],
   bootstrap: [AppComponent]

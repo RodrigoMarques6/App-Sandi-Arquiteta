@@ -5,3 +5,8 @@
     font-size: 2.5vw;
     font-family: 'Poppins', sans-serif;
   }
+
+  .mat-toolbar {
+    background-color: rgb(61, 0, 61);
+    color: #fff;
+  }
