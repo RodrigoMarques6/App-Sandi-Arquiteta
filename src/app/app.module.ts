@@ -10,11 +10,12 @@ import { TabelaEconomicoComponent } from './components/tabela-economico/tabela-e
   declarations: [
     AppComponent,
     PlanoEconomicoComponent,
-    TabelaEconomicoComponent,
+    
   ],
   imports: [
     BrowserModule,
     MenuComponent,
+    TabelaEconomicoComponent,
   ],
   providers: [],
   bootstrap: [AppComponent]
