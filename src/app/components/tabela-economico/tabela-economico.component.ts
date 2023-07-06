@@ -21,6 +21,8 @@ const ELEMENT_DATA: PeriodicElement[] = [
   {modalidade: 8, taxa: 'Oxygen', desconto: 15.9994, receba_total: 1000, receba_mes: 1000, cliente_paga_mes: 1000},
   {modalidade: 9, taxa: 'Fluorine', desconto: 18.9984, receba_total: 1000, receba_mes: 1000, cliente_paga_mes: 1000},
   {modalidade: 10, taxa: 'Neon', desconto: 20.1797, receba_total: 1000, receba_mes: 1000, cliente_paga_mes: 1000},
+  {modalidade: 11, taxa: 'Neon', desconto: 20.1797, receba_total: 1000, receba_mes: 1000, cliente_paga_mes: 1000},
+  {modalidade: 12, taxa: 'Neon', desconto: 20.1797, receba_total: 1000, receba_mes: 1000, cliente_paga_mes: 1000},
 ];
 
 @Component({
