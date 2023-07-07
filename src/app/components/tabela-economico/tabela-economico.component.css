@@ -6,4 +6,12 @@
 
 .mat-elevation-z8 {
     background-color: bisque;
+    margin: auto;
+}
+
+.aviso {
+    border: 2px solid black;
+    text-align: center;
+    margin: auto;
+    font-size: 100%;
 }
