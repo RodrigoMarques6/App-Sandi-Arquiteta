@@ -11,14 +11,13 @@ import { HomeComponent } from './components/home/home.component';
   declarations: [
     AppComponent,
     PlanoEconomicoComponent,
-    HomeComponent,
-    
   ],
   imports: [
     BrowserModule,
     MenuComponent,
     TabelaEconomicoComponent,
     AppRoutingModule,
+    HomeComponent,
   ],
   providers: [],
   bootstrap: [AppComponent]
