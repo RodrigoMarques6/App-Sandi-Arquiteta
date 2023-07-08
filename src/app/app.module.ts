@@ -6,6 +6,8 @@ import { MenuComponent } from './components/menu/menu.component';
 import { PlanoEconomicoComponent } from './components/plano-economico/plano-economico.component';
 import { TabelaEconomicoComponent } from './components/tabela-economico/tabela-economico.component';
 import { HomeComponent } from './components/home/home.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 
 @NgModule({
   declarations: [
@@ -18,6 +20,7 @@ import { HomeComponent } from './components/home/home.component';
     TabelaEconomicoComponent,
     AppRoutingModule,
     HomeComponent,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

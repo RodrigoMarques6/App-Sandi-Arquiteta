@@ -1,9 +1,46 @@
-.divhome1, .divhome2 {
-    padding: 10px;
-    width: 70%;
-    height: 10%;
-    border: 2px solid #f1b673;
-    border-radius: 10%;
+.mat-expansion-panel {
+    width: 50%;
     margin: auto;
+    background-color: #f1b673;
+    border: 2px solid black;
+}
+
+.mat-expansion-panel-header {
+    padding: 1%;
+}
+
+.mat-panel-title {
+    justify-content: center;
+}
+
+.div1-expasion-panel {
     text-align: center;
+}
+
+.mat-form-field {
+    /* border: 1px solid black;
+    background-color: white; */
+    width: 30%;
+}
+
+.mat-label {
+    align-items: center;
+}
+
+.matInput {
+    text-align: center;
+    color: red;
+}
+
+.btn-calc {
+    border: 1px solid black;
+    width: 30%;
+}
+
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+input[type="number"] {
+    -moz-appearance: textfield;
+    appearance: textfield;
 }
