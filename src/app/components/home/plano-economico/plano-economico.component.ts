@@ -16,4 +16,8 @@ export class PlanoEconomicoComponent {
   alert1: string = 'Nesse plano, você recebe mensalmente.';
   command1: string = 'Quanto custa o projeto?';
   valueClient1: string = 'Valor para o cliente:'
+
+  clicou () {
+    console.log('Opa')
+  }
 }

@@ -37,5 +37,5 @@ export class TabelaEconomicoComponent {
   displayedColumns: string[] = ['modalidade', 'taxa', 'desconto', 'receba_total', 'receba_mes', 'cliente_paga_mes'];
   dataSource = ELEMENT_DATA;
 
-  public text: string = `Valores válidos para um projeto de R$ 1000,00`
+  text: string = `Valores válidos para um projeto de R$ 1000,00`
 }
