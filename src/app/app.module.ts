@@ -4,7 +4,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MenuComponent } from './components/menu/menu.component';
 import { PlanoEconomicoComponent } from './components/home/plano-economico/plano-economico.component';
-import { TabelaEconomicoComponent } from './components/tabela-economico/tabela-economico.component';
+import { TabelaEconomicoComponent } from './components/home/plano-economico/tabela-economico/tabela-economico.component';
 import { HomeComponent } from './components/home/home.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { PlanoAntecipadoComponent } from './components/home/plano-antecipado/plano-antecipado.component';

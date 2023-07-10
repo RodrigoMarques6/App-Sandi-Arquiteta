@@ -9,9 +9,15 @@
     margin: auto;
 }
 
-.aviso {
-    border: 2px solid black;
+.div-alert {
+    border: 2px solid #f1b673;
     text-align: center;
     margin: auto;
-    font-size: 100%;
+    max-width: 80%;
+    margin-top: 2%;
+    font-weight: bold;
+}
+
+th, td {
+    text-align: center;
 }
