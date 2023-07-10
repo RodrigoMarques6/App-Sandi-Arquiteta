@@ -1,20 +1,14 @@
 import { Component } from '@angular/core';
-import {MatExpansionModule} from '@angular/material/expansion';
-import {MatInputModule} from '@angular/material/input';
-import {MatButtonModule} from '@angular/material/button';
-import { RouterModule } from '@angular/router';
-
+import { PlanoEconomicoComponent } from './plano-economico/plano-economico.component';
+import { PlanoAntecipadoComponent } from './plano-antecipado/plano-antecipado.component';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css'],
   standalone: true,
-  imports: [MatExpansionModule, MatInputModule, MatButtonModule, RouterModule]
+  imports: [PlanoEconomicoComponent, PlanoAntecipadoComponent]
 })
 export class HomeComponent {
-  description1: string = 'Plano Econômico';
-  alert1: string = 'Nesse plano, você recebe mensalmente.';
-  command1: string = 'Quanto custa o projeto?';
-  valueClient1: string = 'Valor para o cliente:'
+  
 }

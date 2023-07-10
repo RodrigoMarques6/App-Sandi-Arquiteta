@@ -2,7 +2,7 @@ import { NgModule } from "@angular/core";
 import { RouterModule, Routes } from "@angular/router";
 
 import { MenuComponent } from "./components/menu/menu.component";
-import { PlanoEconomicoComponent } from "./components/plano-economico/plano-economico.component";
+import { PlanoEconomicoComponent } from "./components/home/plano-economico/plano-economico.component";
 import { TabelaEconomicoComponent } from "./components/tabela-economico/tabela-economico.component";
 import { HomeComponent } from "./components/home/home.component";
 
