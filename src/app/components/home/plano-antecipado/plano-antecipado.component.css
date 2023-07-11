@@ -5,8 +5,8 @@
 .mat-expansion-panel {
     width: 50%;
     margin: auto;
-    background-color: #f1b673;
-    border: 2px solid black;
+    background-color: transparent;
+    border: 1px solid violet;
 }
 
 .mat-expansion-panel-header {
@@ -15,6 +15,7 @@
 
 .mat-panel-title {
     justify-content: center;
+    color: #8fb9aa;
 }
 
 .div1-expasion-panel {
@@ -47,4 +48,9 @@ input[type="number"]::-webkit-inner-spin-button {
 input[type="number"] {
     -moz-appearance: textfield;
     appearance: textfield;
+}
+
+p {
+    font-size: 2.7vh;
+    color: #8fb9aa;
 }

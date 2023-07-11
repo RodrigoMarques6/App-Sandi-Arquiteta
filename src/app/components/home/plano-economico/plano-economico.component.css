@@ -5,12 +5,15 @@
 .mat-expansion-panel {
     width: 50%;
     margin: auto;
-    background-color: #f1b673;
-    border: 2px solid black;
+    background-color: transparent;
+    border: 1px solid violet;
 }
 
 .mat-expansion-panel-header {
     padding: 1%;
+    color: #8fb9aa;
+    background: linear-gradient(#022f44, rgb(61, 0, 61));
+    background-repeat: no-repeat;
 }
 
 .mat-panel-title {
@@ -33,7 +36,6 @@
 
 .matInput {
     text-align: center;
-    color: red;
 }
 
 .btn-calc {
@@ -47,4 +49,10 @@ input[type="number"]::-webkit-inner-spin-button {
 input[type="number"] {
     -moz-appearance: textfield;
     appearance: textfield;
+}
+
+p {
+    /* font-weight: bold; */
+    font-size: 2.7vh;
+    color: #8fb9aa;
 }
