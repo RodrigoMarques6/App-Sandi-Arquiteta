@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatInput, MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
@@ -17,9 +17,11 @@ export class PlanoEconomicoComponent {
   alert1: string = 'Nesse plano, você recebe mensalmente.';
   command1: string = 'Quanto custa o projeto?';
   valueClient1: string = 'Valor para o cliente:';
-  valueInput?: number;
+  valueInput!: number;
 
   clickBtnCalc () {
     console.log(this.valueInput)
-  }
+  };
+
+  @Input() valueDentro!: string;
 }

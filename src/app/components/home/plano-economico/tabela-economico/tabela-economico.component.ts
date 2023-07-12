@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import {MatTableModule} from '@angular/material/table';
 
 export interface PeriodicElement {
