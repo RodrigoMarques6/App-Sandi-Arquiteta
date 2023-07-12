@@ -13,10 +13,10 @@
     
             <mat-form-field class="mat-form-field">
               <mat-label class="mat-label">{{valueClient1}}</mat-label>
-              <input class="matInput" matInput placeholder="Ex. 2000" type="number">
+              <input class="matInput" [(ngModel)]="valueInput" matInput placeholder="Ex. 2000" type="number">
             </mat-form-field><br>
     
-            <a routerLink="/tabela"><button mat-raised-button class="btn-calc" (click)="clicou()">Calcular</button></a>
+            <a routerLink="/tabela"><button mat-raised-button class="btn-calc" (click)="clickBtnCalc()">Calcular</button></a>
     
           </div>
     
