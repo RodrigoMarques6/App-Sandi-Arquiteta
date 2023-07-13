@@ -4,6 +4,7 @@ import { MatInput, MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-plano-economico',
@@ -18,10 +19,18 @@ export class PlanoEconomicoComponent {
   command1: string = 'Quanto custa o projeto?';
   valueClient1: string = 'Valor para o cliente:';
   valueInput!: number;
+  teste: number = 1;
 
   clickBtnCalc () {
     console.log(this.valueInput)
   };
 
   @Input() valueDentro!: string;
+
+  constructor(private router: Router) {}
+
+  navigateToTabelaEconomicoComponent() {
+    const dadoParaPassar = this.teste;
+    this.router.navigate(['/tabela'], { queryParams: { data: dadoParaPassar } });
+  }
 }
