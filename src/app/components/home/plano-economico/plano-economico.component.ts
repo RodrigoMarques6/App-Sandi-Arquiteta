@@ -19,18 +19,13 @@ export class PlanoEconomicoComponent {
   command1: string = 'Quanto custa o projeto?';
   valueClient1: string = 'Valor para o cliente:';
   valueInput!: number;
-  teste: number = 1;
 
   clickBtnCalc () {
     console.log(this.valueInput)
   };
 
-  @Input() valueDentro!: string;
-
-  constructor(private router: Router) {}
-
-  navigateToTabelaEconomicoComponent() {
-    const dadoParaPassar = this.teste;
-    this.router.navigate(['/tabela'], { queryParams: { data: dadoParaPassar } });
+  constructor (private router: Router) {}
+  goToTable() {
+    this.router.navigate(['tabela'])
+    }
   }
-}

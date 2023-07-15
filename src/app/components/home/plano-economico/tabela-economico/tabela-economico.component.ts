@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
-import {MatTableModule} from '@angular/material/table';
-import { ActivatedRoute } from '@angular/router';
+import { MatTableModule } from '@angular/material/table';
+import { Router } from '@angular/router';
 
 export interface PeriodicElement {
   taxa: string;
@@ -41,15 +41,9 @@ export class TabelaEconomicoComponent {
   text2: number = 1000;
 
   text: string = `Valores válidos para um projeto de R$  ${this.text2}`;
-  
 
-  constructor(private route: ActivatedRoute) {}
-
-  ngOnInit() {
-    this.route.queryParams.subscribe(params => {
-      const dadoPassado = params['data']; // 'dadoParaPassar' será acessível aqui
-      // Faça algo com os dados passados
-      console.log(dadoPassado);
-    });
-  }
+  constructor (private router: Router) {}
+  goToStart() {
+    this.router.navigate(['home'])
+    }
 }

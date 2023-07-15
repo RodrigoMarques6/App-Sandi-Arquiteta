@@ -10,5 +10,5 @@ import { PlanoAntecipadoComponent } from './plano-antecipado/plano-antecipado.co
   imports: [PlanoEconomicoComponent, PlanoAntecipadoComponent]
 })
 export class HomeComponent {
-  valor: string = 'Olá mundo!';
+  
 }

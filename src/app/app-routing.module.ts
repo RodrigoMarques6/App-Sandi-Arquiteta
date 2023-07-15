@@ -7,8 +7,10 @@ import { TabelaEconomicoComponent } from "./components/home/plano-economico/tabe
 import { HomeComponent } from "./components/home/home.component";
 
 const routes: Routes = [
-    { path: '', component: HomeComponent },
+    { path: 'home', component: HomeComponent },
     { path: 'tabela', component: TabelaEconomicoComponent},
+    { path: '', redirectTo: 'home', pathMatch: 'full'},
+    { path: '**', redirectTo: 'home', pathMatch: 'full'}
 ];
 
 @NgModule({
