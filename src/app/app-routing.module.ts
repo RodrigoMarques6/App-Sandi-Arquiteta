@@ -11,7 +11,7 @@ const routes: Routes = [
     { path: 'tabela', component: TabelaEconomicoComponent},
     { path: '', redirectTo: 'home', pathMatch: 'full'},
     { path: '**', redirectTo: 'home', pathMatch: 'full'}
-    // Adicionar as novas rotas
+    // Adicionar as novas rotas aqui!
 ];
 
 @NgModule({
