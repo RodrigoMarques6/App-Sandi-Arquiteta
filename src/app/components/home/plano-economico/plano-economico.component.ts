@@ -21,8 +21,9 @@ export class PlanoEconomicoComponent {
   valueClient1: string = 'Valor para o cliente:';
   valueInput!: number;
 
-  clickBtnCalc () {
+  clickBtnCalc (): number {
     console.log(this.valueInput)
+    return this.valueInput
   };
 
   constructor (private router: Router, private sharedData: SharedDataService) {}
@@ -31,7 +32,7 @@ export class PlanoEconomicoComponent {
 
     this.router.navigate(['tabela'])
 
-    this.sharedData.setNumber(200);
+    this.sharedData.setNumber(this.clickBtnCalc());
 
     }
 

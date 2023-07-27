@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { MatTableModule } from '@angular/material/table';
 import { Router } from '@angular/router';
 import { SharedDataService } from 'src/app/services/shared-data.service';
@@ -35,13 +35,19 @@ const ELEMENT_DATA: PeriodicElement[] = [
   standalone: true,
   imports: [MatTableModule],
 })
-export class TabelaEconomicoComponent {
+export class TabelaEconomicoComponent implements OnInit {
   displayedColumns: string[] = ['modalidade', 'taxa', 'desconto', 'receba_total', 'receba_mes', 'cliente_paga_mes'];
   dataSource = ELEMENT_DATA;
 
   text2: number = 1000;
 
-  text: string = `Valores válidos para um projeto de R$  ${this.text2}`;
+  number1!: number
+
+  text: string = `Valores válidos para um projeto de R$  ${this.number1}`;
+
+  ngOnInit(): void {
+    this.number1 = this.sharedData.getNumber();
+  }
 
   constructor (private router: Router, private sharedData: SharedDataService) {}
   goToStart() {
