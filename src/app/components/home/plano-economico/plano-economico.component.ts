@@ -5,6 +5,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { Router } from '@angular/router';
+import { SharedDataService } from 'src/app/services/shared-data.service';
 
 @Component({
   selector: 'app-plano-economico',
@@ -24,8 +25,14 @@ export class PlanoEconomicoComponent {
     console.log(this.valueInput)
   };
 
-  constructor (private router: Router) {}
+  constructor (private router: Router, private sharedData: SharedDataService) {}
+  
   goToTable() {
+
     this.router.navigate(['tabela'])
+
+    this.sharedData.setNumber(200);
+
     }
+
   }

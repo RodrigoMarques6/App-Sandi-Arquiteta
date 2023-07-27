@@ -1,6 +1,7 @@
 import { Component, Input } from '@angular/core';
 import { MatTableModule } from '@angular/material/table';
 import { Router } from '@angular/router';
+import { SharedDataService } from 'src/app/services/shared-data.service';
 
 export interface PeriodicElement {
   taxa: string;
@@ -42,8 +43,10 @@ export class TabelaEconomicoComponent {
 
   text: string = `Valores válidos para um projeto de R$  ${this.text2}`;
 
-  constructor (private router: Router) {}
+  constructor (private router: Router, private sharedData: SharedDataService) {}
   goToStart() {
+    
     this.router.navigate(['home'])
+
     }
 }
