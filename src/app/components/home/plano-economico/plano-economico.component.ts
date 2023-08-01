@@ -19,21 +19,17 @@ export class PlanoEconomicoComponent {
   alert1: string = 'Nesse plano, você recebe mensalmente.';
   command1: string = 'Quanto custa o projeto?';
   valueClient1: string = 'Valor para o cliente:';
-  valueInput!: number;
+  valueInput1!: number;
 
-  // clickBtnCalc (): number {
-  //   console.log(this.valueInput)
-  //   return this.valueInput
-  // };
+  clickBtnCalc (): any {
+    console.log(this.valueInput1)
+  };
 
   constructor (private router: Router, private sharedData: SharedDataService) {}
   
   goToTable() {
-
+    this.clickBtnCalc();
     this.router.navigate(['tabela'])
-
-    this.sharedData.setNumber(this.valueInput);
-
+    this.sharedData.setNumber(this.valueInput1);
     }
-
   }
