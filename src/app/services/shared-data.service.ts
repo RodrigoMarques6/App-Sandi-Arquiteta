@@ -5,6 +5,8 @@ import { Injectable } from '@angular/core';
 })
 export class SharedDataService {
   number!: number;
+  taxa1!: number;
+  taxa2!: number;
 
   constructor() { }
 
