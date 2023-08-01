@@ -39,14 +39,15 @@ export class TabelaEconomicoComponent implements OnInit {
   displayedColumns: string[] = ['modalidade', 'taxa', 'desconto', 'receba_total', 'receba_mes', 'cliente_paga_mes'];
   dataSource = ELEMENT_DATA;
 
-  text2: number = 1000;
+  text2!: number;
 
   number1!: number
 
-  text: string = `Valores válidos para um projeto de R$  ${this.number1}`;
+  text: string = `Valores válidos para um projeto de R$ `;
+  // ${this.text2}
 
   ngOnInit(): void {
-    this.number1 = this.sharedData.getNumber();
+    this.text2 = this.sharedData.getNumber();
   }
 
   constructor (private router: Router, private sharedData: SharedDataService) {}
