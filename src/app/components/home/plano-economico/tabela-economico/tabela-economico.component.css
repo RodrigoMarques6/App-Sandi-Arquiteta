@@ -32,3 +32,8 @@ th, td {
 p {
     color: #8fb9aa;
 }
+
+.mat-mdc-row:hover .mat-mdc-cell {
+    color: bisque;
+    font-weight: bold;
+  }

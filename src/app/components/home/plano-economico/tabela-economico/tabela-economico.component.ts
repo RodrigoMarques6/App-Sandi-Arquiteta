@@ -4,13 +4,13 @@ import { Router } from '@angular/router';
 import { SharedDataService } from 'src/app/services/shared-data.service';
 
 export interface PeriodicElement {
-  taxa: string;
-  modalidade: string;
-  desconto: number;
-  receba_total: number;
-  receba_mes: number;
+  taxa: string,
+  modalidade: string,
+  desconto: number,
+  receba_total: number,
+  receba_mes: number,
   cliente_paga_mes: number,
-}
+};
 
 const ELEMENT_DATA: PeriodicElement[] = [
   {modalidade: 'Débito', taxa: 'Hydrogen', desconto: 1.0079, receba_total: 1000, receba_mes: 1000, cliente_paga_mes: 1000},
